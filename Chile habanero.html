@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chile Habanero — Presentación</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f7a74d;
+      --accent:#fffb00;
+      --green:#034b0d;
+      --card:#ffffff;
+      --muted:#333333;
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      margin:0; background:linear-gradient(180deg,var(--bg),#fff); color:#111;
+      -webkit-font-smoothing:antialiased;
+    }
+    header{
+      background: radial-gradient(circle at 10% 10%, rgba(255,123,64,0.14), transparent 10%),
+                  linear-gradient(90deg, rgba(255,107,53,0.06), rgba(47,122,58,0.02));
+      padding:48px 24px;
+      display:flex; gap:24px; align-items:center; justify-content:center; flex-direction:column;
+      text-align:center;
+    }
+    .hero{
+      max-width:1100px; width:100%; display:grid; grid-template-columns: 1fr 380px; gap:28px; align-items:center;
+    }
+    h1{font-family:'Playfair Display', serif; font-size:2.6rem; margin:0; color:var(--green)}
+    p.lead{margin:10px 0 0; color:var(--muted); font-size:1.05rem}
+    .pepper-figure{background:linear-gradient(135deg,#fff 0,#fff0 40%); border-radius:18px; padding:18px; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 20px rgba(47,122,58,0.08)}
+    .pepper-figure img{width:100%; max-width:320px; height:auto; border-radius:12px}
+
+    main{max-width:1100px; margin:28px auto; padding:0 18px 80px}
+    .grid{display:grid; grid-template-columns:repeat(2,1fr); gap:20px}
+    section.card{background:var(--card); padding:20px; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.04)}
+    h2{margin:0 0 10px; color:var(--accent)}
+    ul{margin:0; padding-left:18px; color:var(--muted)}
+
+    .badge{display:inline-block; padding:8px 12px; border-radius:999px; font-weight:600; font-size:0.85rem; color:white; background:var(--accent)}
+
+    .fullwidth{grid-column:1 / -1}
+
+    .facts{display:flex; gap:12px; flex-wrap:wrap}
+    .fact{flex:1 1 140px; background:#fffaf6; padding:10px; border-radius:10px; text-align:center}
+    .fact strong{display:block; font-size:1.05rem; color:var(--green)}
+    footer{max-width:1100px; margin:40px auto 80px; padding:0 18px; text-align:center; color:var(--muted)}
+
+    /* responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <div>
+        <span class="badge">Botánica · Capsicum chinense</span>
+        <h1>Chile Habanero</h1>
+        <p class="lead">Una presentación breve y visual sobre la planta del chile habanero: origen, características y cuidados — ideal para una clase o exposición.</p>
+        <p style="margin-top:14px;color:var(--muted)"><strong>Tip:</strong> usa esta página se usa con fines de informar un poco de nuestro proyecto de huerto.</p>
+      </div>
+      <figure class="pepper-figure" aria-hidden="true">
+        <img src="habanero.jpg" alt="Chile habanero"/>
+      </figure>
+    </div>
+  </header>
+
+ <main>
+</ul>
+</section>
+
+ <main>
+    <div class="grid">
+      <section class="card">
+        <h2>Descripción general</h2>
+        <p style="color:var(--muted)">El <strong>chile habanero</strong> (Capsicum chinense) es una especie de pimiento picante caracterizada por su forma redondeada u ovoide,
+          su color que varía del verde al anaranjado intenso y su sabor muy picante con notas florales y afrutadas. Es ampliamente usado en la cocina regional y en salsas picantes.</p>
+      </section>
+
+      <section class="card">
+        <h2>Características principales</h2>
+        <ul>
+          <li><strong>Tamaño:</strong> frutos pequeños, generalmente 2–6 cm.</li>
+          <li><strong>Color:</strong> verde al madurar a naranja, rojo, amarillo o chocolate según la variedad.</li>
+          <li><strong>Picor:</strong> alto — entre 100,000 y 350,000 SHU (Scoville), dependiendo de la variedad.</li>
+          <li><strong>Planta:</strong> arbusto de 40–100 cm, hojas perennes en climas cálidos.</li>
+          <li><strong>Cosecha:</strong> varias veces al año en climas tropicales; en zonas templadas se cultiva como anual.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Lugar de origen</h2>
+        <p style="color:var(--muted)">El chile habanero tiene su origen en la región amazónica y se difundió por Mesoamérica.
+          Hoy en día se asocia fuertemente con la península de Yucatán (México),
+          donde es ingrediente esencial de la gastronomía regional y de salsas tradicionales.</p>
+      </section>
+
+      <section class="card">
+        <h2>Cuidados y cultivo</h2>
+        <ul>
+          <li><strong>Clima:</strong> prefiere cálido y húmedo, temperaturas entre 22–30 °C.</li>
+          <li><strong>Suelo:</strong> bien drenado, rico en materia orgánica y con pH ligeramente ácido a neutro.</li>
+          <li><strong>Riego:</strong> regular, evitando encharcamientos; más frecuente en floración y fructificación.</li>
+          <li><strong>Exposición:</strong> sol directo 6+ horas diarias para mejor producción y color.</li>
+          <li><strong>Plagas:</strong> áfidos, mosca blanca y podredumbre; rotación y control orgánico recomendado.</li>
+        </ul>
+      </section>
+
+      <section class="card fullwidth">
+        <h2>Usos y notas culturales</h2>
+        <p style="color:var(--muted)">Además de su uso culinario (salsas, adobos, marinados y encurtidos), el habanero tiene presencia en prácticas gastronómicas tradicionales y en la agroindustria de salsas picantes. Su aroma afrutado lo hace especialmente valorado en mezclas donde se busca picor con notas complejas.</p>
+        <div style="margin-top:12px;" class="facts">
+          <div class="fact"><small>Variedades</small><strong>Rojo, naranja, amarillo</strong></div>
+          <div class="fact"><small>Tiempo a cosecha</small><strong>75–120 días</strong></div>
+          <div class="fact"><small>PH ideal</small><strong>6.0–7.0</strong></div>
+          <div class="fact"><small>Escala Scoville</small><strong>100k–350k</strong></div>
+        </div>
+      </section>
+
+  <footer>
+    <p>Creado para saber mas de nuestros cultivos • muchas gracias por leer esta pequeña presentación de nuestro huerto.</p>
+  </footer>
+</body>
+</html>
